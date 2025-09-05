@@ -1,0 +1,4 @@
+- Replaced the animated icon and gradient in the Hero Visual section of `Hero.tsx` with a visually appealing image placeholder (SVG in a rounded, shadowed container).
+- Kept the floating feature pills ("AI Powered", "Real-time", "Social") for visual interest.
+- Added a comment to indicate where to replace the placeholder with a real image in the future.
+- Removed the unused `Activity` import to resolve lint errors.

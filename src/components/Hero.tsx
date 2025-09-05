@@ -1,6 +1,6 @@
-import React from 'react';
-import { Activity, Play, Smartphone, Users, Zap } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import React from "react";
+import { Play, Smartphone, Users, Zap } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
@@ -9,11 +9,14 @@ const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-orange-50"></div>
-      
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full opacity-20 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-r from-orange-400 to-pink-600 rounded-full opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div
+          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-r from-orange-400 to-pink-600 rounded-full opacity-20 animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
@@ -29,7 +32,7 @@ const Hero: React.FC = () => {
                 {t.hero.subtitle}
               </span>
             </h1>
-            
+
             <p className="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               {t.hero.description}
             </p>
@@ -42,7 +45,7 @@ const Hero: React.FC = () => {
                   <Zap className="w-5 h-5 group-hover:animate-pulse" />
                 </span>
               </button>
-              
+
               <button className="group px-8 py-4 bg-white border-2 border-gray-200 text-gray-700 rounded-xl font-semibold text-lg hover:border-blue-500 hover:text-blue-600 transition-all duration-300 shadow-md hover:shadow-lg">
                 <span className="flex items-center justify-center space-x-2">
                   <Play className="w-5 h-5 group-hover:text-blue-500 transition-colors" />
@@ -78,23 +81,16 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Hero Visual */}
-          <div className="relative">
-            <div className="relative z-10 bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-2xl">
-              <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center">
-                <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center animate-pulse">
-                  <Activity className="w-16 h-16 text-white" />
-                </div>
-              </div>
-              
-              {/* Floating Feature Pills */}
-              <div className="absolute -top-4 -left-4 bg-white px-4 py-2 rounded-full shadow-lg border">
-                <span className="text-sm font-semibold text-gray-700">AI Powered</span>
-              </div>
-              <div className="absolute -top-4 -right-4 bg-white px-4 py-2 rounded-full shadow-lg border">
-                <span className="text-sm font-semibold text-gray-700">Real-time</span>
-              </div>
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-lg border">
-                <span className="text-sm font-semibold text-gray-700">Social</span>
+          <div className="relative h-full w-full">
+            <div className="relative z-10 bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl w-full h-full overflow-hidden flex">
+              {/* Wonder Image Placeholder - replace src with your image */}
+              <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl border-4 border-white shadow-xl overflow-hidden flex items-center justify-center">
+                {/* Replace below with <img src=\"...\" alt=\"Hero\" className=\"object-cover w-full h-full\" /> */}
+                <img
+                  src="src/assets/image-fitsphere.png"
+                  alt="Hero"
+                  className=" w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>
