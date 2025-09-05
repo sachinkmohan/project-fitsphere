@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
               <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl border-4 border-white shadow-xl overflow-hidden flex items-center justify-center">
                 {/* Replace below with <img src=\"...\" alt=\"Hero\" className=\"object-cover w-full h-full\" /> */}
                 <img
-                  src="src/assets/image-fitsphere.png"
+                  src="./src/assets/image-fitsphere.png"
                   alt="Hero"
                   className=" w-full h-full object-contain"
                 />
